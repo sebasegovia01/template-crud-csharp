@@ -1,0 +1,7 @@
+﻿@basetemplate_csharp_HostAddress = http://localhost:5114
+
+GET {{basetemplate_csharp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
