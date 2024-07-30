@@ -11,12 +11,18 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <PackageReference Include="DotNetEnv" Version="3.0.0" />
+    <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="3.7.0" />
+    <PackageReference Include="Google.Cloud.PubSub.V1" Version="3.16.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.7" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Crc32.NET" Version="1.2.0" />
+    <PackageReference Include="System.IO.Hashing" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,4 +37,8 @@
     <Folder Include="Services\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
+
+
+
+
 </Project>
