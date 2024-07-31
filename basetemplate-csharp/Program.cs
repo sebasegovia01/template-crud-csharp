@@ -15,7 +15,6 @@ if (builder.Environment.IsDevelopment())
 {
     DotNetEnv.Env.Load();
 }
->>>>>>> template-crud-csharp/main
 
 // Add services to the container.
 
@@ -48,7 +47,6 @@ var redisConfigurationOptions = new ConfigurationOptions
 
 builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(redisConfigurationOptions));
 builder.Services.AddSingleton<RedisService>();
-
 
 // Add PubSubSubscriberService as a hosted service
 builder.Services.AddHostedService<PubSubSubscriberService>();
