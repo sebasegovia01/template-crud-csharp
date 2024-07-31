@@ -1,5 +1,4 @@
-﻿using DotNetEnv;
-using basetemplate_csharp.Data;
+﻿using basetemplate_csharp.Data;
 using Microsoft.EntityFrameworkCore;
 using basetemplate_csharp.Services;
 using StackExchange.Redis;
@@ -11,8 +10,12 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 builder.Logging.AddConsole();
 
-// Load the .env file
-Env.Load();
+// Cargar variables de entorno desde .env solo en desarrollo
+if (builder.Environment.IsDevelopment())
+{
+    DotNetEnv.Env.Load();
+}
+>>>>>>> template-crud-csharp/main
 
 // Add services to the container.
 
