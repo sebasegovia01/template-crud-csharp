@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  basetemplate-csharp:
+    image: ${DOCKER_REGISTRY-}basetemplatecsharp
+    build:
+      context: .
+      dockerfile: basetemplate-csharp/Dockerfile

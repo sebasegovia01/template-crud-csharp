@@ -1,11 +1,13 @@
-﻿using DotNetEnv;
-using basetemplate_csharp.Data;
+﻿using basetemplate_csharp.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Load the .env file
-Env.Load();
+// Cargar variables de entorno desde .env solo en desarrollo
+if (builder.Environment.IsDevelopment())
+{
+    DotNetEnv.Env.Load();
+}
 
 // Add services to the container.
 
