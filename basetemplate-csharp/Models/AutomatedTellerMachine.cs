@@ -31,7 +31,7 @@ namespace basetemplate_csharp.Models
         public string? AtmDistrictName { get; set; }
 
         [MaxLength(35)]
-        [Column("atmcountry_subdivisionmajorname")]
+        [Column("atmcountrysubdivisionmajorname")]
         public string? AtmCountrySubdivisionMajorName { get; set; }
 
         [Required]
