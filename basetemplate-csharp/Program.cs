@@ -1,4 +1,5 @@
 ﻿using basetemplate_csharp.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,9 +10,6 @@ if (builder.Environment.IsDevelopment())
     DotNetEnv.Env.Load();
 }
 
-// Add services to the container.
-
-// Add services to the container.
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

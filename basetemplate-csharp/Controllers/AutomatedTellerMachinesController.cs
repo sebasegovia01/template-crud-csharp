@@ -5,6 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace basetemplate_csharp.Controllers
 {
+    [ApiController]
+    [Route("/")]
+    public class HomeController : ControllerBase
+    {
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("Welcome to my C# API!");
+        }
+    }
+
+
     [Route("api/[controller]")]
     [ApiController]
     public class AutomatedTellerMachinesController : ControllerBase
