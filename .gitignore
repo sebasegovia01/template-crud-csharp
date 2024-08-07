@@ -407,3 +407,7 @@ ASALocalRun/
 # env files
 .env
 .env.*
+
+
+#credentials gcp
+pubsub-creds.json

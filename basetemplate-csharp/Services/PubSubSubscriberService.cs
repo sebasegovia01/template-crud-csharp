@@ -1,9 +1,4 @@
 ﻿using Google.Cloud.PubSub.V1;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace basetemplate_csharp.Services
 {
